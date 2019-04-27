@@ -1,0 +1,247 @@
+
+<!--plantilla principal-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Portal Examen</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="tools/materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/barra.css">
+    <style>
+    body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+        }
+    section#contenidos {
+         flex: 1 0 auto;
+         background-image: url("imgs/fondo_escom.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+     }
+     .card{
+         background-color: hsla(50, 90%, 100%, 0.80);
+     }
+
+
+    @media only screen and (min-width: 801px) and (max-width: 1400px)   {
+        #modal1 { width: 35% !important ; height: 80% !important ; } 
+
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 800px)  {
+
+        #modal1 { width: 50% !important ; height: 80% !important ; } 
+
+    }
+
+    @media only screen and (min-width: 501px) and (max-width: 600px)  {
+
+        #modal1 { width: 70% !important ; height: 80% !important ; } 
+
+    }
+
+
+
+    @media only screen and (min-width: 401px) and (max-width: 500px)  {
+
+        #modal1 { width: 90% !important ; height: 80% !important ; } 
+
+    }
+
+
+
+    @media only screen and (min-width: 200px) and (max-width: 400px)  {
+
+        #modal1 { width: 80% !important ; height: 80% !important ; } 
+
+    }
+
+    .chat-wrapper .chat-message {
+        position: relative;
+        /*float: left;*/
+        clear: both;
+        margin: 2px 50px 20px;
+        padding: 8px;
+        border-radius: 8px;
+        line-height: 22px;
+        background-color: #ddd;
+    }
+    .chat-wrapper .chat-message.right {
+        background-color: #448AFF;
+        color: #fff;
+    }
+    </style>
+    <script type="text/javascript" src="tools/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="tools/materialize/js/materialize.min.js"></script>
+    
+    <script type="text/javascript" src="init.js"></script>
+</head>
+<body>
+	
+        <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo"><img src="imgs/banner_central.png"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="sass.html">Blog</a></li>
+                        <li><a href="badges.html">Profesores</a></li>
+                        <li><a href="collapsible.html">Materias</a></li>
+                        <li><a href="mobile.html">Clubes</a></li>
+                        <li><a href="mobile.html"><i class="material-icons">power_settings_new</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="sass.html">Blog</a></li>
+                <li><a href="badges.html">Profesores</a></li>
+                <li><a href="collapsible.html">Materias</a></li>
+                <li><a href="mobile.html">Clubes</a></li>
+                <li><a href="mobile.html"><i class="material-icons">power_settings_new</i></a></li>
+            </ul>
+<section id="contenidos">	
+
+    <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+            <div class="col s12 m5 l4"> <!-- Note that "m4 l3" was added -->
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="card">
+                            <div class="center">
+                                <img src="./imgs/yuna.jpg" class="circle responsive-img" width="150" heigth="150">
+                                <p></p>
+                                <span class="card-title">Reyna Elia Melara Abarca</span>
+                            </div>
+                            <div class="card-content">
+                                <ul>
+                                    <li>
+                                        <p class="center"><b>Materias impartidas</b></p>
+                                        <ul>
+                                            <li>
+                                                An&aacute;lisis y dise&ntilde;o orientado a objetos: 2CV7, 2CV2 
+                                            </li>
+                                            <li>
+                                                Ingener&iacute;a de software: 3CV5
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+
+                                    </li>
+                                    <li>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-action center">
+                                <a href="#">Curriculum</a>
+                                <a href="#">Horario</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grey navigation panel
+      
+                    This content will be:
+                3-columns-wide on large screens,
+                4-columns-wide on medium screens,
+                12-columns-wide on small screens  -->
+      
+            </div>
+      
+            <div class="col s12 m7 l8"> <!-- Note that "m8 l9" was added -->
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Comentarios</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-content">
+                        <div class="chat-wrapper">
+                            <div class="chat-message">
+                                
+                                <img src="./imgs/yuna.jpg" class="circle responsive-img" width="50" heigth="50">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora quod voluptatibus, deserunt dignissimos omnis, amet dolorum vel quidem exercitationem eos cumque provident excepturi dolore molestias optio a quas eligendi!
+                            </div>
+                            <div class="chat-message">
+                                <img src="./imgs/noce.jpg" class="circle responsive-img" width="50" heigth="50">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora quod voluptatibus, deserunt dignissimos omnis, amet dolorum vel quidem exercitationem eos cumque provident excepturi dolore molestias optio a quas eligendi!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                            <form action="">
+                              <div class="chat-input-bar">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <button type="submit" class="btn blue">
+                                  <i class="material-icons">send</i>
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                    <!--
+                    <div class="card-content">
+                        <div class="chat-wrapper">
+                            <div class="chat-message">
+                                <img src="./imgs/yuna.jpg" alt="avatar" class="circle responsive-img">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus ipsam magni voluptas eligendi voluptatibus quos nulla ex dicta deserunt possimus quo consectetur ducimus corrupti blanditiis, beatae quibusdam. Tempore, animi!"
+                            </div>
+                            <div class="chat-message right">
+                                <img src="./imgs/yuna.jpg" alt="avatar" class="circle responsive-img">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquam id illum ipsam libero, officiis ipsum tempora. Nobis voluptatem architecto officia! Veritatis error quae provident nam inventore similique voluptate.
+                            </div>                            
+                        </div>
+                    </div>
+                </div>-->
+              <!-- Teal page content
+      
+                    This content will be:
+                9-columns-wide on large screens,
+                8-columns-wide on medium screens,
+                12-columns-wide on small screens  -->
+      
+            </div>
+      
+          </div>
+
+ </section>
+
+ <section id="test">
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="white-text center"><b>Instituto Polit&eacute;cnico Nacional</b></p>
+                    <p class="white-text center"><b>Escuela Superior de C&oacute;mputo</b></p>
+                    <p class="grey-text text-lighten-4">
+                        Av. Juan de Dios B&aacute;tiz s/n esq. Av. Miguel Oth&oacute;n de Mendizabal. Colonia Lindavista. Demarcaci&oacute;n Territorial: Gustavo A. Madero. C. P. 07738 
+                    </p>
+                </div>
+            <div id="mapa" class="col l6 s12 center">
+                <iframe class = "maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15043.448460371596!2d-99.1469098!3d19.5045672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2dd0563ce99e8!2sEscuela+Superior+de+C%C3%B3mputo!5e0!3m2!1ses-419!2smx!4v1527366432826" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>          
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 copyright Raymundo, Ache, F, Edna, G, Rodrigo 
+        </div>
+        </div>
+    </footer>
+  </section>
+
+
+
+
+
+</body>
+</html>

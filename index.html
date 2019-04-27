@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Tools/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="Tools/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <title>.:ESCOM-munity:.</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg_1">
+                <nav class="navbar navbar-expand-lg container-fluid">
+                    <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+                        <!-- Cambiar la l por r para ca,biar el centrado desde la seccionn de inicio-->
+                        <img src="imgs/logotipo.png" width="50" height="50" class="d-inline-block align-top logotipo"
+                            alt="">
+                    </div>
+                    <a class="navbar-brand" href="#" id="nombre_app">ESCOM-munity</a>
+                </nav>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-5 p-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-11 rounded p-4 bg-light">
+                        <div class="alert alert-light" role="alert">
+                            <h4 class="alert-heading fuente">¡Bienevenido!</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going
+                                to run
+                                a bit longer so that you can see how spacing within an alert works with this kind of
+                                content.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, reiciendis vitae
+                                libero in tempore aliquid quo molestias inventore facere quod rerum officia ad
+                                molestiae totam iure laboriosam voluptatibus, incidunt mollitia.
+                            </p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 p-3">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 rounded bg-light p-4">
+                                <nav>
+                                    <div class="nav nav-tabs bg-light" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                            role="tab" aria-controls="nav-home" aria-selected="true">Registrarse</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                            role="tab" aria-controls="nav-profile" aria-selected="false">Alumno</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                            role="tab" aria-controls="nav-contact" aria-selected="false">Administrador</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="card-deck text-center m-2">
+                                            <div class="card-body">
+                                                <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+                                                <small class="text-muted">Registro</small> <br><br>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control text-center" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="N° Boleta">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                            placeholder="Password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                            placeholder="Confirma Password">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="card-deck text-center m-2">
+                                            <div class="card p-2">
+                                                <img src="imgs/alumnos.jpg" class="card-img-top img-fluid" alt="..." id="imagen">
+                                                <div class="">
+                                                    <img src="imgs/face.png" class="img-fluid face_login img-thumbnail rounded-circle"
+                                                        width="100px" height="100px">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+                                                    <small class="text-muted">Alumno</small> <br><br>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control text-center" id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp" placeholder="N° Boleta">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                                placeholder="Password">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary">Inicia sesión</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                        <div class="card-deck text-center m-2">
+                                            <div class="card p-2">
+                                                <img src="imgs/admin.jpg" class="card-img-top img-fluid" alt="..." id="imagen">
+                                                <div class="">
+                                                    <img src="imgs/face.png" class="img-fluid face_login img-thumbnail rounded-circle"
+                                                        width="100px" height="100px">
+                                                </div>
+
+                                                <div class="card-body">
+                                                    <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+                                                    <small class="text-muted">Administrador</small> <br><br>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control text-center" id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp" placeholder="Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                                placeholder="Password">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary">Inicia sesión</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER -->
+
+    <div class="container-fluid py-5 bg_3 text-center text-white">
+        <div>
+            <h4 class="fuente">Enterate de lo que pasa en tu escuela</h4><br>
+            <!-- los hijos estran en diplay con tamaño de 4 -->
+            <div class="display-4">
+                <!-- Les agreagsmo los iconos un padding de 5 px con pr-5 -->
+                <i class="pr-5 fas fa-code"></i>
+                <i class="pr-5 fas fa-comment-alt"></i>
+                <i class="pr-5 fas fa-graduation-cap"></i>
+                <i class="pr-5 fas fa-laptop"></i>
+            </div>
+        </div>
+    </div>
+    <!-- FIN BANNER -->
+
+
+    <!-- PRECIOS -->
+    <div class="container-fluid bg_2">
+        <div class="container py-5">
+            <div class="row">
+                <!-- PRECIO1 -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Recibe notifiaciones de interes
+                        </div>
+                        <div class="card-body">
+                            <div class="py-3">
+                                <img src="imgs/notification.png" alt="" width="80" height="80">
+                            </div>
+                            <h5 class="card-title py-2">
+                                <b>Special title treatment</b>
+                            </h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN PRECIO1 -->
+
+                <!-- PRECIO2 -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Consulta eventos del plantel
+                        </div>
+                        <div class="card-body">
+                            <div class="py-3">
+                                <img src="imgs/event.png" alt="" width="80" height="80">
+                            </div>
+                            <h5 class="card-title py-2">
+                                <b>Special title treatment</b>
+                            </h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN PRECIO2 -->
+
+                <!-- PRECIO3 -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Actividades extracurriculares
+                        </div>
+                        <div class="card-body">
+                            <div class="py-3">
+                                <img src="imgs/chess.png" alt="" width="80" height="80">
+                            </div>
+                            <h5 class="card-title py-2">
+                                <b>Special title treatment</b>
+                            </h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN PRECIO3 -->
+
+                <!-- PRECIO 4 -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Objetos perdidos
+                        </div>
+                        <div class="card-body">
+                            <div class="py-3">
+                                <img src="imgs/icon.png" alt="" width="80" height="80">
+                            </div>
+                            <h5 class="card-title py-2">
+                                <b>Special title treatment</b>
+                            </h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN PRECIO 4 -->
+
+            </div>
+        </div>
+    </div>
+    <hr id="divider_1" class="m-0">
+    <!-- FIN PRECIOS -->
+
+
+    <!-- DIVISOR TRANSPARENTE -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 divisor">
+            </div>
+        </div>
+    </div>
+    <!-- FIN DE DIVISOR -->
+
+
+    <!-- SECCION 4 -->
+    <div class="container-fluid bg_1">
+        <div class="row">
+            <div class="col-md-6 p-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <div class="container">
+                            <div class="row info_admin">
+                                <div class="col align-self-start text-center rounded-circle bg-light p-2">
+                                    <img src="imgs/integrated-circuit.png" class="img-fluid" alt="Responsive image"
+                                        width="75" height="75">
+                                </div>
+                                <div class="col align-self-center text-center sett p-2 bg-light">
+                                    <img src="imgs/graduates.png" class="img-fluid" alt="Responsive image" width="100">
+                                </div>
+                                <div class="col align-self-end text-center rounded-circle bg-light p-2">
+                                    <img src="imgs/blog.png" class="img-fluid" alt="Responsive image" width="75" height="75">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 p-2">
+                        <div class="alert alert-light" role="alert">
+                            <h4 class="alert-heading fuente">Para los alumnos</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going
+                                to run a bit longer so that you can see how spacing within an alert works with this
+                                kind of content.</p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr id="divider_1" class="m-0">
+    <!-- FIN SECCION 4 -->
+
+    <!-- SECCION 5 -->
+    <div class="container-fluid bg_1">
+        <div class="row">
+            <div class="col-md-6 p-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 p-2">
+                        <div class="alert alert-light" role="alert">
+                            <h4 class="alert-heading fuente">Para los admisntradores</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going
+                                to run a bit longer so that you can see how spacing within an alert works with this
+                                kind of content.</p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <div class="container">
+                            <div class="row info_admin">
+                                <div class="col align-self-end text-center rounded-circle bg-light p-2">
+                                    <img src="imgs/user.png" class="img-fluid" alt="Responsive image" width="75" height="75">
+                                </div>
+                                <div class="col align-self-center text-center sett p-2 bg-light">
+                                    <img src="imgs/setting.png" class="img-fluid" alt="Responsive image" width="100">
+                                </div>
+                                <div class="col align-self-start text-center rounded-circle bg-light p-2">
+                                    <img src="imgs/coding.png" class="img-fluid" alt="Responsive image" width="75"
+                                        height="75">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr id="divider_1" class="m-0">
+    <!-- FIN SECCION 5 -->
+
+    <!-- SECCION 6 -->
+    <div class="container-fluid py-5 bg_3 text-center text-white">
+        <div>
+            <h4 class="fuente">Contenidos del sitio</h4><br>
+            <!-- los hijos estran en diplay con tamaño de 4 -->
+            <div class="display-4">
+                <div class="row">
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Celex</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Cafetería</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Optativas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Becas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Actividades deportivas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Clubs</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">CATT</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Objetos perdios</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Materiales</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Eventos escolares</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Blog</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Consulta de horarios</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Profesores</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Salones vacios</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Mapa del sitio</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Biblioteca</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Calendario</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">SAES (Descarga horario)</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SECCION 6 -->
+
+
+    <!-- DIVISOR TRANSPARENTE -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 divisor">
+            </div>
+        </div>
+    </div>
+    <!-- FIN DE DIVISOR -->
+    <!-- FOOTER -->
+    <footer class="page-footer font-small bg_1 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase fuente">ESCOM-munity</h5>
+                    <p>Sitio desarrollado por alumnos de ESCOM</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="fuente">Desarrolladores</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            García Rodrigo
+                        </li>
+                        <li>
+                            Pérez Atziri
+                        </li>
+                        <li>
+                            Yahir
+                        </li>
+                        <li>
+                            Gilberto
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="fuente">Redes sociales</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!"><i class="fab fa-facebook mr-3"></i></a>
+                            <a href="#!"><i class="fab fa-github mr-3"></i></a>
+                            <a href="#"><i class="fab fa-gitlab"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fab fa-facebook mr-3"></i></a>
+                            <a href="#!"><i class="fab fa-github mr-3"></i></a>
+                            <a href="#"><i class="fab fa-gitlab"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fab fa-facebook mr-3"></i></a>
+                            <a href="#!"><i class="fab fa-github mr-3"></i></a>
+                            <a href="#"><i class="fab fa-gitlab"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fab fa-facebook mr-3"></i></a>
+                            <a href="#!"><i class="fab fa-github mr-3"></i></a>
+                            <a href="#"><i class="fab fa-gitlab"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <img src="imgs/logotipo.png" width="50" height="50" class="ml-3 mr-3 d-inline-block align-top logotipo" alt="">
+            <a href="https://mdbootstrap.com/education/bootstrap/"> ESCOM-munity.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- FIN FOOTER -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

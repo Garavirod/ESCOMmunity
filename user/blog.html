@@ -1,0 +1,287 @@
+<!--plantilla principal-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portal Examen</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="tools/materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/barra.css">
+    <style>
+        body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+        }
+    #myVideo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover;
+        transition: 1s opacity;
+    }
+    section#contenidos {
+         flex: 1 0 auto;
+         background-image: url("imgs/fondo_escom.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+     }
+     .card{
+         background-color: hsla(50, 90%, 100%, 0.80);
+     }
+
+
+    @media only screen and (min-width: 801px) and (max-width: 1400px)   {
+        #modal1 { width: 35% !important ; height: 80% !important ; } 
+
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 800px)  {
+
+        #modal1 { width: 50% !important ; height: 80% !important ; } 
+
+    }
+
+    @media only screen and (min-width: 501px) and (max-width: 600px)  {
+
+        #modal1 { width: 70% !important ; height: 80% !important ; } 
+
+    }
+
+
+
+    @media only screen and (min-width: 401px) and (max-width: 500px)  {
+
+        #modal1 { width: 90% !important ; height: 80% !important ; } 
+
+    }
+
+
+
+    @media only screen and (min-width: 200px) and (max-width: 400px)  {
+
+        #modal1 { width: 80% !important ; height: 80% !important ; } 
+
+    }
+
+    </style>
+    <script type="text/javascript" src="tools/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="tools/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="init.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo"><img src="imgs/banner_central.png"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Blog</a></li>
+                <li><a href="badges.html">Profesores</a></li>
+                <li><a href="collapsible.html">Materias</a></li>
+                <li><a href="mobile.html">Clubes</a></li>
+                <li><a href="mobile.html"><i class="material-icons">power_settings_new</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Blog</a></li>
+        <li><a href="badges.html">Profesores</a></li>
+        <li><a href="collapsible.html">Materias</a></li>
+        <li><a href="mobile.html">Clubes</a></li>
+        <li><a href="mobile.html"><i class="material-icons">power_settings_new</i></a></li>
+    </ul>
+
+    <section id="contenidos">
+        <div class="container">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="imgs/yuna.jpg" class="circle responsive-img" height="50px" width="50px">
+                            <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s10">
+                            <h6>Escribe un comentario user:</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <form action="#">
+                            <div class="col s12 m12 l12 input-field">
+                                <textarea id="coment" class="materialize-textarea"></textarea>
+                                <label for="coment">comentario</label>
+                            </div>
+                            <button type="submit" class="btn">publicar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="imgs/yuna.jpg" class="circle responsive-img" height="50px" width="50px">
+                            <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s10">
+                            <h6>User ha publicado:</h6>
+                            <ul id="dropdown1" class="dropdown-content">
+                                <li><a href="#!">Editar</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Eliminar</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                            <a href="#!" class="dropdown-trigger right" style="color:grey;" data-target="dropdown1"><i
+                                    class="material-icons">more_vert</i></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card white">
+                                    <div class="card-content white-text">
+                                        <span class="card-title black-text">Card Title</span>
+                                        <p class="black-text">I am a very simple card. I am good at containing small
+                                            bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Comentar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <div class="card-panel grey lighten-5 z-depth-1">
+                        <div class="row valign-wrapper">
+                            <div class="col s2">
+                                <img src="imgs/yuna.jpg" class="circle responsive-img" height="50px" width="50px">
+                                <!-- notice the "circle" class -->
+                            </div>
+                            <div class="col s10">
+                                <h6>User ha publicado:</h6>
+                                <ul id="dropdown1" class="dropdown-content">
+                                    <li><a href="#!">Editar</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">Eliminar</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                                <a href="#!" class="dropdown-trigger right" style="color:grey;" data-target="dropdown1"><i
+                                        class="material-icons">more_vert</i></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card white">
+                                        <div class="card-content white-text">
+                                            <span class="card-title black-text">Card Title</span>
+                                            <p class="black-text">I am a very simple card. I am good at containing small
+                                                bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">Comentar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row valign-wrapper">
+                                <div class="col s2">
+                                    <img src="imgs/yuna.jpg" class="circle responsive-img" height="50px" width="50px">
+                                    <!-- notice the "circle" class -->
+                                </div>
+                                <div class="col s10">
+                                    <h6>User ha publicado:</h6>
+                                    <ul id="dropdown1" class="dropdown-content">
+                                        <li><a href="#!">Editar</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!">Eliminar</a></li>
+                                        <li class="divider"></li>
+                                    </ul>
+                                    <a href="#!" class="dropdown-trigger right" style="color:grey;" data-target="dropdown1"><i
+                                            class="material-icons">more_vert</i></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="card white">
+                                            <div class="card-content white-text">
+                                                <span class="card-title black-text">Card Title</span>
+                                                <p class="black-text">I am a very simple card. I am good at containing small
+                                                    bits of information.
+                                                    I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                            <div class="card-action">
+                                                <a href="#">Comentar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+
+    </section>
+
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="white-text center"><b>Instituto Polit&eacute;cnico Nacional</b></p>
+                    <p class="white-text center"><b>Escuela Superior de C&oacute;mputo</b></p>
+                    <p class="grey-text text-lighten-4">
+                        Av. Juan de Dios B&aacute;tiz s/n esq. Av. Miguel Oth&oacute;n de Mendizabal. Colonia
+                        Lindavista. Demarcaci&oacute;n Territorial: Gustavo A. Madero. C. P. 07738
+                    </p>
+                </div>
+                <div id="mapa" class="col l6 s12 center">
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15043.448460371596!2d-99.1469098!3d19.5045672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2dd0563ce99e8!2sEscuela+Superior+de+C%C3%B3mputo!5e0!3m2!1ses-419!2smx!4v1527366432826"
+                        width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 copyright Raymundo, Ache, F, Edna, G, Rodrigo
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
