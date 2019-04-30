@@ -7,8 +7,6 @@ body {
 	background-size: cover; 
 }
 
-.hola{}
-
 .face_login{
 	margin-top: -50px;
 
@@ -71,6 +69,12 @@ body {
 	border-radius: 5px;
 }
 
+
+.seccion{
+	height: 60px;
+}
+
+.seccion h5{font-size: 16px;}
 
 
 
