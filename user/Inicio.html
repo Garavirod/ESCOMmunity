@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link rel="stylesheet" href="../Tools/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
-    <title>.:ESCOM-munity:.</title>
+    <title>.:@User:.</title>
 </head>
 
 <body>
@@ -28,28 +28,55 @@
                 </nav>
             </div>
         </div>
-
     </div>
     <!-- FIN  CONTENEDOR-->
 
     <!-- SECCION DE BIENEVENDIDA -->
-    <div class="row-my-5">
-        <div class="col-md-12 bg-light p-3">
+    <div class="row">
+        <div class="col-md-12 bg-light p-4">
             <h3 class="fuente m-2">
                 Bienevenido
                 <small class="text-muted">@user</small>
             </h3>
             <hr id="divider">
-            <div class="row justify-content-center">
-                <div class="col-md-11 bg-light p-3">
-                    <div class="alert alert-info" role="alert">
-                        <h4 class="alert-heading">Well done!</h4>
-                        <p>Aww yeah, you successfully read this important alert message. This example text is going
-                            to run a bit longer so that you can see how spacing within an alert works with this
-                            kind of content.</p>
-                        <hr>
-                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
-                            and tidy.</p>
+
+            <div class="row p-3 border border-secondary ml-2 mr-2">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                            aria-controls="v-pills-home" aria-selected="true">Inicio</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                            aria-controls="v-pills-profile" aria-selected="false">Perfil</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                            aria-controls="v-pills-messages" aria-selected="false">Notificaciones</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                            aria-controls="v-pills-settings" aria-selected="false">Configuraciones</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                            aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-power-off"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-9 border p-2">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-md-11 bg-light p-2">
+                                    <div class="alert alert-info" role="alert">
+                                        <h4 class="alert-heading">Well done!</h4>
+                                        <p>Aww yeah, you successfully read this important alert message. This example
+                                            text is going
+                                            to run a bit longer so that you can see how spacing within an alert works
+                                            with this
+                                            kind of content.</p>
+                                        <hr>
+                                        <p class="mb-0">Activa la campana "<i class="far fa-bell"></i>" para recibir notifiaciones de las secciones de interés</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
                     </div>
                 </div>
             </div>
@@ -58,73 +85,292 @@
     <!-- FIN DE SECCIÓN DE BIENVENIDA -->
 
     <!-- SECCIÓN DE CONTENIDOS -->
-    <div class="container-fluid">
+    <div class="container-fluid p-3 bg_3">
+        <h4 class="fuente text-light">Secciones</h4>
+        <hr id="divider_2">
         <div class="row">
-            <div class="col-md-12 bg_2 p-3">
-                <h4 class="fuente">Secciones</h4>
-                <hr id="divider_2">
+            <div class="col md-12 mt-3 p-3">
                 <div class="row justify-content-center">
-                    <div class="col-md-11  p-3">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card" ">
-                                    <img src=" imgs/fondo_escom.jpg"
-                                    class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        <div class="form-check my-2">
-                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
-                                                value="option1" aria-label="...">
+                    <div class="col-md-10">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-auto">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-search"></i></div>
                                         </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card" ">
-                                    <img src=" imgs/fondo_escom.jpg"
-                                    class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        <div class="form-check my-2">
-                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
-                                                value="option1" aria-label="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" ">
-                                    <img src=" imgs/fondo_escom.jpg"
-                                    class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        <div class="form-check my-2">
-                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
-                                                value="option1" aria-label="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" ">
-                                    <img src=" imgs/fondo_escom.jpg"
-                                    class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        <div class="form-check my-2">
-                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
-                                                value="option1" aria-label="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-justify-content-center">
+            <div class="col-md-12 mt-5">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">CELEX</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">CATT</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Optativas</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cosas perdidas</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafetería</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Becas</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Act deportivas</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Clubs</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Materiales</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Eventos escolares</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Profesores</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Salones vacios</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mapa del sitio</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Biblioteca</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Calendario</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Descarga horario</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Papelería</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Alumnos consejeros</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>                   
                 </div>
             </div>
         </div>
