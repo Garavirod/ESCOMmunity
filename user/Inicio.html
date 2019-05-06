@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-md-12 bg-light p-4">
             <h3 class="fuente m-2">
-                Bienevenido
+                Bienvenido
                 <small class="text-muted">@user</small>
             </h3>
             <hr id="divider">
@@ -44,24 +44,25 @@
                 <div class="col-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                            aria-controls="v-pills-home" aria-selected="true">Inicio</a>
+                            aria-controls="v-pills-home" aria-selected="true"><i class="mr-3 fas fa-home"></i>Inicio</a>
                         <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                            aria-controls="v-pills-profile" aria-selected="false">Perfil</a>
+                            aria-controls="v-pills-profile" aria-selected="false"><i class="mr-3 fas fa-user"></i>Perfil</a>
                         <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                            aria-controls="v-pills-messages" aria-selected="false">Notificaciones</a>
+                            aria-controls="v-pills-messages" aria-selected="false"><i class="mr-3 fas fa-bell"></i>Notificaciones
+                            <span class="badge badge-secondary badge-pill ml-2">3</span></a>
                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false">Configuraciones</a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-power-off"></i></a>
-
+                            aria-controls="v-pills-settings" aria-selected="false"><i class="mr-3 fas fa-cog"></i>Configuraciones</a>
                     </div>
+                    <a class="nav-link" href="../index.html"
+                        aria-controls="v-pills-settings" aria-selected="false"><i class="mr-3 fas fa-power-off"></i>Cerrar
+                        sesión</a>
                 </div>
                 <div class="col-9 border p-2">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                             <div class="row justify-content-center">
                                 <div class="col-md-11 bg-light p-2">
-                                    <div class="alert alert-info" role="alert">
+                                    <div class="alert alert-light" role="alert">
                                         <h4 class="alert-heading">Well done!</h4>
                                         <p>Aww yeah, you successfully read this important alert message. This example
                                             text is going
@@ -69,14 +70,113 @@
                                             with this
                                             kind of content.</p>
                                         <hr>
-                                        <p class="mb-0">Activa la campana "<i class="far fa-bell"></i>" para recibir notifiaciones de las secciones de interés</p>
+                                        <p class="mb-0">Activa la campana "<i class="far fa-bell"></i>" para recibir
+                                            notifiaciones de las secciones de interés</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                        <div class="tab-pane fade p-3" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="row">
+                                <div class="col-md-12  p-3 bg_4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12">
+                                            <img src="imgs/yuna.jpg" class="rounded mx-auto d-block img-thumbnail rounded-circle"
+                                                alt="...">
+                                        </div>
+                                        <div class="col-md-12 p-3">
+                                            <button type="button" class="btn btn-secondary btn-sm mx-auto d-block"><i
+                                                    class="mr-2 fas fa-camera"></i> Cambiar foto</button>
+                                        </div>
+                                        <div class="col-md-12  p-3">
+                                            <h5 class="fuente m-2">
+                                                @Username :
+                                                <small class="text-muted">usuario</small>
+                                            </h5>
+                                            <h5 class="fuente m-2">
+                                                N° Boleta :
+                                                <small class="text-muted">2314456778</small>
+                                            </h5>
+                                            <h5 class="fuente m-2">
+                                                Nombre :
+                                                <small class="text-muted">Apellido1 Apellido2 Nombre</small>
+                                            </h5>
+                                            <h5 class="fuente m-2">
+                                                Email :
+                                                <small class="text-muted">alumnoescomipn@gmail.com</small>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Papelería</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                                        eget risus varius blandit.</p>
+                                    <small>Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">CELEX</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                                        eget risus varius blandit.</p>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Objetos perdidos</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                                        eget risus varius blandit.</p>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <ul class="list-group">
+                                <li class="list-group-item text-center">
+                                    CUENTA <br>
+                                    <small id="passwordHelpInline" class="text-muted">
+                                        Edita la configuración de tu cuenta y cambia la contraseña aquí.
+                                    </small>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">E-mail</label>
+                                        <fieldset disabled>
+                                            <input type="email" class="form-control" id="disabledTextInput" placeholder="name@example.com">
+                                        </fieldset>
+                                        <button type="button" class="mt-3 text-center btn btn-primary mb-2"><i class="fas fa-edit"></i>
+                                            Editar</button>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Contraseña</label>
+                                        <input type="password" class="mb-2 form-control" id="exampleFormControlInput1"
+                                            placeholder="Contraseña actual">
+                                        <input type="password" class="mb-2 form-control" id="exampleFormControlInput1"
+                                            placeholder="Nueva contraseña">
+                                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Confirma contraseña">
+
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-center">
+                                    Guardar cambios <br>
+                                    <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +185,7 @@
     <!-- FIN DE SECCIÓN DE BIENVENIDA -->
 
     <!-- SECCIÓN DE CONTENIDOS -->
-    <div class="container-fluid p-3 bg_3">
+    <div class="container-fluid p-3 bg_2">
         <h4 class="fuente text-light">Secciones</h4>
         <hr id="divider_2">
         <div class="row">
@@ -112,7 +212,7 @@
             <div class="col-md-12 mt-5">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">CELEX</h5>
                         </div>
@@ -125,7 +225,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">CATT</h5>
                         </div>
@@ -138,7 +238,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Optativas</h5>
                         </div>
@@ -151,7 +251,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Cosas perdidas</h5>
                         </div>
@@ -164,7 +264,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Cafetería</h5>
                         </div>
@@ -181,7 +281,7 @@
             <div class="col-md-12 mt-3">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Becas</h5>
                         </div>
@@ -194,7 +294,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Act deportivas</h5>
                         </div>
@@ -207,7 +307,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Clubs</h5>
                         </div>
@@ -220,7 +320,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Materiales</h5>
                         </div>
@@ -233,7 +333,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Eventos escolares</h5>
                         </div>
@@ -250,9 +350,9 @@
             <div class="col-md-12 mt-3">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Blog</h5>
+                            <h5 class="card-title">Servicio médico</h5>
                         </div>
                         <div class="card-footer">
                             <button type="button" class="btn btn-outline-primary">Ir a la seccion</button>
@@ -263,7 +363,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Profesores</h5>
                         </div>
@@ -276,7 +376,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Salones vacios</h5>
                         </div>
@@ -289,7 +389,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Mapa del sitio</h5>
                         </div>
@@ -302,7 +402,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Biblioteca</h5>
                         </div>
@@ -314,13 +414,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="col-md-12 mt-3">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/fondo_escom.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Calendario</h5>
                         </div>
@@ -333,7 +433,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Descarga horario</h5>
                         </div>
@@ -346,7 +446,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Papelería</h5>
                         </div>
@@ -359,7 +459,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="imgs/data.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="imgs/exam2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Alumnos consejeros</h5>
                         </div>
@@ -370,7 +470,7 @@
                                     value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
         </div>
@@ -412,10 +512,10 @@
                             Pérez Atziri
                         </li>
                         <li>
-                            Yahir
+                            Yahir Carrillo
                         </li>
                         <li>
-                            Gilberto
+                            Gilberto Oledo
                         </li>
                     </ul>
 
