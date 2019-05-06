@@ -16,7 +16,9 @@ body {
 	height: 200px;
 }
 
-
+.navbar.navbar-7 .navbar-toggler-icon {
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger9.svg?color=FF2C00');
+	}
 
 #nombre_app{
 	font-family: 'Audiowide', cursive;
