@@ -28,10 +28,12 @@
                     <div class="collapse navbar-collapse text-center col-md-3" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active d-inline mr-2">
-                                <a class="nav-link" href="Inicio.html"><i class="mr-3 fas fa-home"></i>Inicio <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="Inicio.html"><i class="mr-3 fas fa-home"></i>Inicio <span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item d-inline">
-                                <a class="nav-link" href="../index.html"><i class="mr-3 fas fa-power-off"></i>Cerrar sesión</a>
+                                <a class="nav-link" href="../index.html"><i class="mr-3 fas fa-power-off"></i>Cerrar
+                                    sesión</a>
                             </li>
                         </ul>
                     </div>
@@ -91,31 +93,62 @@
             <h4 class="fuente text-light">Publicaciones</h4>
             <hr id="divider_2">
             <div class="row">
-                <!-- CARD_1 -->
+                <!-- FORMULARIO DE PUBLICACION -->
                 <div class="col-md-12 mb-5 ">
                     <div class="card bg-muted">
                         <div class="card-header">
                             <h5 class="fuente">@User</h5>
                         </div>
                         <div class="card-body border-top">
+                            <div class="form-group">
+                                <label for="validationTextarea">Tíulo</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
                             <div class="mb-3">
                                 <label for="validationTextarea">¿Qué quieres compartir?</label>
                                 <textarea class="form-control" id="validationTextarea" placeholder="Escribi aquí lo quieres compartr..."
                                     required></textarea>
                                 <div class=""">
-                            <a href=" #" class="btn btn-primary mt-3">Publicar</a>
+                            <button class="btn btn-primary mt-3">Publicar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- FIN CARD 1 -->
+                <!-- FIN DE FORMULARIO DE PUBLICACON -->
+
+                <!-- PUBLICACION ADMIN -->
+                <div class="col-md-12 mb-3 mt-3">
+                    <div class="card border border-primary">
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h5 class="fuente text-primary">@Administrador</h5>
+                            </div>
+                            <h5 class="card-title m-2">Formato de receta médica</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Reprehenderit laudantium deserunt autem culpa! Aspernatur dolor, voluptas ad accusamus,
+                                dolorem earum quia rem aperiam officiis minus harum vero laborum beatae odio.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-7 m-2">
+                                <img src="imgs/receta.jpg" class="img-fluid card-img-top img-thumbnail" alt="Responsive image"
+                                    width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button class="btn btn-primary" type="submit">Comentar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN PUBLICACION DE ADMIN -->
+
 
                 <!-- CARD_2 -->
                 <div class="col-md-12 mb-3 mt-5">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="fuente">@User_123</h5>
+                            <h5 class="fuente">@User_913</h5>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">¿Como puedo sacar cita medica?</h5>
@@ -128,52 +161,83 @@
                             2 days ago
                         </div>
                     </div>
-
+                    <!-- COMENTARIO -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="fuente">@User_123</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
+                                adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
+                                eveniet tempore cum excepturi id exercitationem vitae.</p>
+                            <button class="btn btn-primary" type="submit">Comentar</button>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                    <!-- FIN COMENTARIO -->
+                    <!-- COMENTARIO -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="fuente">@User_107</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
+                                adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
+                                eveniet tempore cum excepturi id exercitationem vitae.</p>
+                            <button class="btn btn-primary" type="submit">Comentar</button>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                    <!-- FIN COMENTARIO -->
                 </div>
                 <!-- FIN CARD 2 -->
 
                 <!-- CARD -3 -->
                 <div class="col-md-12 mb-3 mt-5">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="fuente">@User_123</h5>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">¿Como puedo sacar cita medica?</h5>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
-                                    adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
-                                    eveniet tempore cum excepturi id exercitationem vitae.</p>
-                                <button class="btn btn-primary" type="submit">Comentar</button>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="fuente">@User_903</h5>
                         </div>
-    
+                        <div class="card-body">
+                            <h5 class="card-title">Justificar falta con receta médica</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
+                                adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
+                                eveniet tempore cum excepturi id exercitationem vitae.</p>
+                            <button class="btn btn-primary" type="submit">Comentar</button>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
                     </div>
+
+                </div>
                 <!-- FIN CARD 3 -->
 
                 <!-- CARD 4 -->
                 <div class="col-md-12 mb-3 mt-5">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="fuente">@User_123</h5>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">¿Como puedo sacar cita medica?</h5>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
-                                    adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
-                                    eveniet tempore cum excepturi id exercitationem vitae.</p>
-                                <button class="btn btn-primary" type="submit">Comentar</button>
-                            </div>
-                            <div class="card-footer text-muted">
-                                2 days ago
-                            </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="fuente">@User_345</h5>
                         </div>
-    
+                        <div class="card-body">
+                            <h5 class="card-title">Consultar seguro médico</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
+                                adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
+                                eveniet tempore cum excepturi id exercitationem vitae.</p>
+                            <button class="btn btn-primary" type="submit">Comentar</button>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
                     </div>
+
+                </div>
                 <!-- FIN CARD 4 -->
-               
+
             </div>
         </div>
     </div>
@@ -265,7 +329,8 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <img src="../imgs/logotipo.png" width="50" height="50" class="ml-3 mr-3 d-inline-block align-top logotipo" alt="">
+            <img src="../imgs/logotipo.png" width="50" height="50" class="ml-3 mr-3 d-inline-block align-top logotipo"
+                alt="">
             <a href="https://mdbootstrap.com/education/bootstrap/"> ESCOM-munity.com</a>
         </div>
         <!-- Copyright -->
