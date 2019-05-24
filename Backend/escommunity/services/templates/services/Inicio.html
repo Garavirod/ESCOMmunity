@@ -184,12 +184,12 @@
             </div>
         </div>
         <div class="row  justify-content-center p-1">
-            {% for seccion in secciones reversed %}
+            {% for section in sections reversed %}
                 <div class="col-md-3  mt-3">
                     <div class="card">
-                        <img class="mw-100" src="{{seccion.image.url}}" height="150">
+                        <img class="mw-100" src="{{section.image.url}}" height="150">
                         <div class="card-body">
-                            <h5 class="card-title">{{seccion.nameModule|title}}</h5>
+                            <h5 class="card-title">{{section.nameModule|title}}</h5>
                         </div>
                         <div class="card-footer">
                             <a href="celex.html" class="btn btn-outline-primary">Ir a la seccion</a>
