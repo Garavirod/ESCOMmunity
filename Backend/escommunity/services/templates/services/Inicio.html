@@ -1,0 +1,207 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block control %}
+    <p class="navbar-brand"  id="nombre_app">ESCOM-munity</p>
+{% endblock control %}
+
+{% block content %}
+     <!-- SECCION DE BIENEVENDIDA -->
+    <div class="row">
+        <div class="col-md-12 bg-light p-4">
+            <h3 class="fuente m-2">
+                Bienvenido
+                <small class="text-muted">@user</small>
+            </h3>
+            <hr id="divider">
+
+            <div class="row p-3 border border-secondary ml-2 mr-2">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                            aria-controls="v-pills-home" aria-selected="true"><i class="mr-3 fas fa-home"></i>Inicio</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                            aria-controls="v-pills-profile" aria-selected="false"><i class="mr-3 fas fa-user"></i>Perfil</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                            aria-controls="v-pills-messages" aria-selected="false"><i class="mr-3 fas fa-bell"></i>Notificaciones
+                            <span class="badge badge-secondary badge-pill ml-2">3</span></a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                            aria-controls="v-pills-settings" aria-selected="false"><i class="mr-3 fas fa-cog"></i>Configuraciones</a>
+                    </div>
+                    <a class="nav-link" href="../index.html"
+                        aria-controls="v-pills-settings" aria-selected="false"><i class="mr-3 fas fa-power-off"></i>Cerrar
+                        sesión</a>
+                </div>
+                <div class="col-9 border p-2">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-md-11 bg-light p-2">
+                                    <div class="alert alert-light" role="alert">
+                                        <h4 class="alert-heading">Well done!</h4>
+                                        <p>Aww yeah, you successfully read this important alert message. This example
+                                            text is going
+                                            to run a bit longer so that you can see how spacing within an alert works
+                                            with this
+                                            kind of content.</p>
+                                        <hr>
+                                        <p class="mb-0">Activa la campana "<i class="far fa-bell"></i>" para recibir
+                                            notifiaciones de las secciones de interés</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-3" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="row">
+                                <div class="col-md-12  p-3 bg_4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12">
+                                            <img src="{% static 'core/imgs/yuna.jpg' %}" class="rounded mx-auto d-block img-thumbnail rounded-circle"
+                                                alt="...">
+                                        </div>
+                                        <div class="col-md-12 p-3">
+                                            <button type="button" class="btn btn-secondary btn-sm mx-auto d-block"><i
+                                                    class="mr-2 fas fa-camera"></i> Cambiar foto</button>
+                                        </div>
+                                        <div class="col-md-12  p-3">
+                                            <h5 class="fuente m-2">
+                                                @Username :
+                                                <small class="text-muted">usuario</small>
+                                            </h5>
+                                            <h5 class="fuente m-2">
+                                                N° Boleta :
+                                                <small class="text-muted">2314456778</small>
+                                            </h5>
+                                            <h5 class="fuente m-2">
+                                                Nombre :
+                                                <small class="text-muted">Apellido1 Apellido2 Nombre</small>
+                                            </h5>
+                                            <h5 class="fuente m-2">
+                                                Email :
+                                                <small class="text-muted">alumnoescomipn@gmail.com</small>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Papelería</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                                        eget risus varius blandit.</p>
+                                    <small>Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">CELEX</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                                        eget risus varius blandit.</p>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Objetos perdidos</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam
+                                        eget risus varius blandit.</p>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <ul class="list-group">
+                                <li class="list-group-item text-center">
+                                    CUENTA <br>
+                                    <small id="passwordHelpInline" class="text-muted">
+                                        Edita la configuración de tu cuenta y cambia la contraseña aquí.
+                                    </small>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">E-mail</label>
+                                        <fieldset disabled>
+                                            <input type="email" class="form-control" id="disabledTextInput" placeholder="name@example.com">
+                                        </fieldset>
+                                        <button type="button" class="mt-3 text-center btn btn-primary mb-2"><i class="fas fa-edit"></i>
+                                            Editar</button>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Contraseña</label>
+                                        <input type="password" class="mb-2 form-control" id="exampleFormControlInput1"
+                                            placeholder="Contraseña actual">
+                                        <input type="password" class="mb-2 form-control" id="exampleFormControlInput1"
+                                            placeholder="Nueva contraseña">
+                                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Confirma contraseña">
+
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-center">
+                                    Guardar cambios <br>
+                                    <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN DE SECCIÓN DE BIENVENIDA -->
+
+    <!-- SECCIÓN DE CONTENIDOS -->
+    <div class="container-fluid p-3 bg_2">
+        <h4 class="fuente text-light">Secciones</h4>
+        <hr id="divider_2">
+        <div class="row">
+            <div class="col md-12 mt-3 p-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-auto">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-search"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  justify-content-center p-1">
+            {% for seccion in secciones reversed %}
+                <div class="col-md-3  mt-3">
+                    <div class="card">
+                        <img class="mw-100" src="{{seccion.image.url}}" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">{{seccion.nameModule|title}}</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="celex.html" class="btn btn-outline-primary">Ir a la seccion</a>
+                            <div class="form-check">
+                                <input class="form-check-input position-static mt-2" type="checkbox" id="blankCheckbox"
+                                    value="option1" aria-label="..."><i class="far fa-bell ml-2"></i>
+                            </div>
+                        </div>
+                    </div>    
+                </div>                
+            {% endfor %}            
+        </div>
+    </div>
+    <!-- FIN DE CONTENIDOS -->
+{% endblock content %}

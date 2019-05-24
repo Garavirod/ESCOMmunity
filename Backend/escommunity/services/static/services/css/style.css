@@ -1,0 +1,30 @@
+#divider{
+  border: solid 1px;
+  height: 6px;
+  background-color: rgb(24, 38, 163);
+}
+
+#divider_2{
+  height: 6px;
+  background-color: rgb(255, 255, 255);
+}
+
+#divider_3{
+  height: 6px;
+  background-color: black;
+}
+
+.ted{
+  height: 50px;
+}
+
+.fuente3{font-size: 15px;}
+
+.text_autor{
+  color:rgb(24, 38, 163);
+}
+
+#img_sm{
+  width: 500px;
+  height: 270px;
+}

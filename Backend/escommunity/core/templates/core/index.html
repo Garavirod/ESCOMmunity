@@ -1,0 +1,496 @@
+    {% extends 'core/base.html' %}
+    {% load static %}
+    {% block control %}
+        <p class="navbar-brand"  id="nombre_app">ESCOM-munity</p>
+    {% endblock control %}
+    {% block formulario %}
+        <!-- FORMULARIO Y BIENVENDIA -->
+        <div class="row my-5">
+            <!-- BIENVENIDA -->
+            <div class="col-md-5 p-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-11 rounded p-4 bg-light">
+                        <div class="alert alert-light" role="alert">
+                            <h4 class="alert-heading fuente">¡Bienvenido!</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going
+                                to run
+                                a bit longer so that you can see how spacing within an alert works with this kind of
+                                content.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, reiciendis vitae
+                                libero in tempore aliquid quo molestias inventore facere quod rerum officia ad
+                                molestiae totam iure laboriosam voluptatibus, incidunt mollitia.
+                            </p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN BIENVENIDA -->
+
+            <!-- LOGIN -->
+            <div class="col-md-7">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 p-3">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 rounded bg-light p-4">
+                                <nav>
+                                    <div class="nav nav-tabs bg-light" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                            role="tab" aria-controls="nav-home" aria-selected="true">Registrarse</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                            role="tab" aria-controls="nav-profile" aria-selected="false">Alumno</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                            role="tab" aria-controls="nav-contact" aria-selected="false">Administrador</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="card-deck text-center m-2">
+                                            <div class="card-body">
+                                                <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+                                                <small class="text-muted">Registro</small> <br><br>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control text-center" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="N° Boleta">
+                                                    </div>
+                                                        <div class="form-group">
+                                                        <input type="text" class="form-control text-center" id="exampleInputPassword1"
+                                                            placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                            placeholder="Password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                            placeholder="Confirma Password">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="card-deck text-center m-2">
+                                            <div class="card p-2">
+                                                <img src="{% static 'core/imgs/alumnos.jpg' %}" class="card-img-top img-fluid" alt="..." id="imagen">
+                                                <div class="">
+                                                    <img src="{% static 'core/imgs/face.png' %}" class="img-fluid face_login img-thumbnail rounded-circle"
+                                                        width="100px" height="100px">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+                                                    <small class="text-muted">Alumno</small> <br><br>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control text-center" id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp" placeholder="N° Boleta">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                                placeholder="Password">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary">Inicia sesión</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                        <div class="card-deck text-center m-2">
+                                            <div class="card p-2">
+                                                <img src="{% static 'core/imgs/admin.jpg' %}" class="card-img-top img-fluid" alt="..." id="imagen">
+                                                <div class="">
+                                                    <img src="{% static 'core/imgs/face.png' %}" class="img-fluid face_login img-thumbnail rounded-circle"
+                                                        width="100px" height="100px">
+                                                </div>
+
+                                                <div class="card-body">
+                                                    <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+                                                    <small class="text-muted">Administrador</small> <br><br>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control text-center" id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp" placeholder="Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control text-center" id="exampleInputPassword1"
+                                                                placeholder="Password">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary">Inicia sesión</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN LOGIN -->
+        </div>
+        <!-- FIN FORMULARIO Y BIENVENIDA -->
+    {% endblock formulario %}
+
+    {% block content %}
+        <!-- SECCION 1 -->
+
+        <div class="container-fluid py-5 bg_3 text-center text-white">
+            <div>
+                <h4 class="fuente">Enterate de lo que pasa en tu escuela</h4><br>
+                <!-- los hijos estran en diplay con tamaño de 4 -->
+                <div class="display-4">
+                    <!-- Les agreagsmo los iconos un padding de 5 px con pr-5 -->
+                    <i class="pr-5 fas fa-code"></i>
+                    <i class="pr-5 fas fa-comment-alt"></i>
+                    <i class="pr-5 fas fa-graduation-cap"></i>
+                    <i class="pr-5 fas fa-laptop"></i>
+                </div>
+            </div>
+        </div>
+        <!-- FIN SECCION 1 -->
+
+
+        <!-- SECCION 2 -->
+        <div class="container-fluid bg_2">
+            <div class="container py-5">
+                <div class="row">
+                    <!-- CARD_1 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Recibe notificaciones de interes
+                            </div>
+                            <div class="card-body">
+                                <div class="py-3">
+                                    <img src="{% static 'core/imgs/notification.png' %}" alt="" width="80" height="80">
+                                </div>
+                                <h5 class="card-title py-2">
+                                    <b>Special title treatment</b>
+                                </h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARD_1 -->
+
+                    <!-- CARD_2 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Consulta eventos del plantel
+                            </div>
+                            <div class="card-body">
+                                <div class="py-3">
+                                    <img src="{% static 'core/imgs/event.png' %}" alt="" width="80" height="80">
+                                </div>
+                                <h5 class="card-title py-2">
+                                    <b>Special title treatment</b>
+                                </h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARD_2 -->
+
+                    <!-- CARD_3 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Actividades extracurriculares
+                            </div>
+                            <div class="card-body">
+                                <div class="py-3">
+                                    <img src="{% static 'core/imgs/chess.png' %}" alt="" width="80" height="80">
+                                </div>
+                                <h5 class="card-title py-2">
+                                    <b>Special title treatment</b>
+                                </h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARD_3 -->
+
+                    <!-- CARD_4 4 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Objetos perdidos
+                            </div>
+                            <div class="card-body">
+                                <div class="py-3">
+                                    <img src="{% static 'core/imgs/icon.png' %}" alt="" width="80" height="80">
+                                </div>
+                                <h5 class="card-title py-2">
+                                    <b>Special title treatment</b>
+                                </h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN CARD_4 4 -->
+                </div>
+            </div>
+        </div>
+        <hr id="divider_1" class="m-0">
+        <!-- FIN seccion 2 -->
+
+
+        <!-- DIVISOR TRANSPARENTE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 divisor">
+                </div>
+            </div>
+        </div>
+        <!-- FIN DE DIVISOR -->
+
+
+        <!-- SECCION 4 -->
+        <div class="container-fluid bg_1">
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-11">
+                            <div class="container">
+                                <div class="row info_admin">
+                                    <div class="col align-self-start text-center rounded-circle bg-light p-2">
+                                        <img src="{% static 'core/imgs/integrated-circuit.png' %}" class="img-fluid" alt="Responsive image"
+                                            width="75" height="75">
+                                    </div>
+                                    <div class="col align-self-center text-center sett p-2 bg-light">
+                                        <img src="{% static 'core/imgs/graduates.png' %}" class="img-fluid" alt="Responsive image" width="100">
+                                    </div>
+                                    <div class="col align-self-end text-center rounded-circle bg-light p-2">
+                                        <img src="{% static 'core/imgs/blog.png' %}" class="img-fluid" alt="Responsive image" width="75" height="75">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 p-2">
+                            <div class="alert alert-light" role="alert">
+                                <h4 class="alert-heading fuente">Para los alumnos</h4>
+                                <p>Aww yeah, you successfully read this important alert message. This example text is going
+                                    to run a bit longer so that you can see how spacing within an alert works with this
+                                    kind of content.</p>
+                                <hr>
+                                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                    and tidy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr id="divider_1" class="m-0">
+        <!-- FIN SECCION 4 -->
+
+        <!-- SECCION 5 -->
+        <div class="container-fluid bg_1">
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 p-2">
+                            <div class="alert alert-light" role="alert">
+                                <h4 class="alert-heading fuente">Para los admisntradores</h4>
+                                <p>Aww yeah, you successfully read this important alert message. This example text is going
+                                    to run a bit longer so that you can see how spacing within an alert works with this
+                                    kind of content.</p>
+                                <hr>
+                                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice
+                                    and tidy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-11">
+                            <div class="container">
+                                <div class="row info_admin">
+                                    <div class="col align-self-end text-center rounded-circle bg-light p-2">
+                                        <img src="{% static 'core/imgs/user.png' %}" class="img-fluid" alt="Responsive image" width="75" height="75">
+                                    </div>
+                                    <div class="col align-self-center text-center sett p-2 bg-light">
+                                        <img src="{% static 'core/imgs/setting.png' %}" class="img-fluid" alt="Responsive image" width="100">
+                                    </div>
+                                    <div class="col align-self-start text-center rounded-circle bg-light p-2">
+                                        <img src="{% static 'core/imgs/coding.png' %}" class="img-fluid" alt="Responsive image" width="75"
+                                            height="75">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr id="divider_1" class="m-0">
+        <!-- FIN SECCION 5 -->
+
+        <!-- SECCION 6 -->
+        <div class="container-fluid py-5 bg_3 text-center text-white">
+            <div>
+                <h4 class="fuente">Contenidos del sitio</h4><br>
+                <!-- los hijos estran en diplay con tamaño de 4 -->
+                <div class="display-4">
+                    <div class="row">
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Celex</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Cafetería</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Optativas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Becas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Actividades deportivas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Clubs</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">CATT</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Objetos perdios</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Materiales</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Eventos escolares</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Servicio médico</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Consulta de horarios</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Profesores</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Salones vacios</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Mapa del sitio</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Biblioteca</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">Calendario</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  my-2">
+                            <div class="card seccion rounded-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark">SAES (Descarga horario)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN SECCION 6 -->
+
+
+        <!-- DIVISOR TRANSPARENTE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 divisor">
+                </div>
+            </div>
+        </div>
+        <!-- FIN DE DIVISOR -->
+
+    
+    {% endblock content %}
