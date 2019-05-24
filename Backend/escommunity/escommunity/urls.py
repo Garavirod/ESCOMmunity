@@ -22,6 +22,8 @@ urlpatterns = [
     path('',include('core.urls')),
     #Path services
     path('Inicio/',include('services.urls')),
+    #Path Blog
+    path('modulo/',include('blog.urls')),
     #Path admin
     path('admin/', admin.site.urls),
 ]
