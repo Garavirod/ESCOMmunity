@@ -2,8 +2,8 @@ from django.shortcuts import render
 from .models import Service
 # Create your views here.
 def services(request):
-    secciones = Service.objects.all()
-    return render(request,"services/Inicio.html",{'secciones':secciones})
+    sections = Service.objects.all()
+    return render(request,"services/Inicio.html",{'sections':sections})
 
 # def modulo(request,mod):
 #     seccion= Service.objects.filter(nameModule=mod)
