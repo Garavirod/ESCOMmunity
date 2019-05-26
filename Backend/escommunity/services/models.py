@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+
 # Create your models here.
 class Service(models.Model):
     nameModule = models.CharField(max_length=200, verbose_name="Nombre del módulo")       
@@ -10,7 +11,7 @@ class Service(models.Model):
     image = models.ImageField(verbose_name="Imagen", upload_to="services")
     created = models.DateTimeField(auto_now_add=True,verbose_name="Fecha de creación")
     updated = models.DateTimeField(auto_now=True,verbose_name="Fecha de edición")
-    user = models.ForeignKey(User,verbose_name="Administrador del módulo",on_delete=models.CASCADE)
+    user = models.OneToOneField(User,verbose_name="Administrador del módulo",on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "servicio"
@@ -19,4 +20,3 @@ class Service(models.Model):
 
     def __str__(self):
             return self.nameModule
-        

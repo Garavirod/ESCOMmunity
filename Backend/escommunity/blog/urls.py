@@ -2,6 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('',views.Blog,name="blog"),
-    #path('modulo/',views.modulo,name="modulo"),
+    path('<section>/',views.Blog,name="blog"),
 ]
