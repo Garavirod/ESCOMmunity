@@ -14,44 +14,37 @@
         </ul>
     </div>
 {% endblock control %}
-{% block content %}
-    <h1>{{request.path}}</h1>
+{% block content %}    
         <!-- SECCION 1 -->
     <div class="container-fluid py-5 bg_3 text-center text-white bg-dark">
         <div class="row px-3">
             <div class="col-md-8">
                 <div class="row ">
                     <div class="col-md-11">
-                        <h4 class="fuente text-white p-2 text-left text-primary">Biblioteca</h4>
+                        <h4 class="fuente text-white p-2 text-left text-primary">{{service.nameModule}}</h4>
                     </div>
                     <div class="col-md-11 p-3">
-                        <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus
-                            sit amet
-                            fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam
-                            res quas
-                            ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius
-                            Galliae
-                            in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+                        <p class="text-justify">{{service.descModule}}</p>
                     </div>
                     <div class="col-md-11  p-2">
                         <h3 class="fuente3 text-left text-primary">
                             Administrador
-                            <small class="text-muted text-bold">@AdminName</small>
+                            <small class="text-muted text-bold">{{service.user}}</small>
                         </h3>
                         <h3 class="fuente3 text-left text-primary">
                             Tel:
-                            <small class="text-muted text_autor">555-555-555</small>
+                            <small class="text-muted text_autor">{{service.cel}}</small>
                         </h3>
                         <h3 class="fuente3 text-left text-primary">
                             correo
-                            <small class="text-muted text_autor">admin345@gmail.com</small>
+                            <small class="text-muted text_autor">{{service.eMail}}</small>
                         </h3>
                     </div>
                 </div>
 
             </div>
             <div class="col-md-4">
-                <img src="imgs/biblioteca.jpg" class="img-fluid img-thumbnail" alt="Responsive image" id="img_sm">
+                <img src="{{service.image.url}}" class="img-fluid img-thumbnail" alt="Responsive image" id="img_sm">
             </div>
         </div>
     </div>
@@ -88,21 +81,20 @@
                 <!-- FIN DE FORMULARIO DE PUBLICACON -->
 
                 <!-- PUBLICACION ADMIN -->
-                <div class="col-md-12 mb-3 mt-3">
+                {% for post in posts %}                
+                    <div class="col-md-12 mb-3 mt-3">
                     <div class="card border border-primary">
                         <div class="card-body">
                             <div class="card-header">
-                                <h5 class="fuente text-primary">@Administrador</h5>
+                                <h5 class="fuente text-primary">{{post.author}}</h5>
                             </div>
-                            <h5 class="card-title m-2">Formato de receta médica</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Reprehenderit laudantium deserunt autem culpa! Aspernatur dolor, voluptas ad accusamus,
-                                dolorem earum quia rem aperiam officiis minus harum vero laborum beatae odio.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title m-2">{{post.title}}</h5>
+                            <p class="card-text">{{post.content|linebreaks}}</p>
+                            <p class="card-text"><small class="text-muted">Publicado : {{post.published|date:"SHORT_DATE_FORMAT"}}</small></p>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-7 m-2">
-                                <img src="https://picsum.photos/200" class="img-fluid card-img-top img-thumbnail" alt="Responsive image"
+                                <img src="{{post.image.url}}" class="img-fluid card-img-top img-thumbnail" alt="Responsive image"
                                     width="100" height="100">
                             </div>
                         </div>
@@ -110,7 +102,9 @@
                             <button class="btn btn-primary" type="submit">Comentar</button>
                         </div>
                     </div>
-                </div>
+                </div>                
+                {% endfor %}
+                
                 <!-- FIN PUBLICACION DE ADMIN -->
 
 
