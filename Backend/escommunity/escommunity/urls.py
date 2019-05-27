@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 
 urlpatterns = [
-    #Path core
+    # #Path core
     path('',include('core.urls')),
     #Path services
     path('Inicio/',include('services.urls')),
@@ -26,6 +26,9 @@ urlpatterns = [
     path('modulo/',include('blog.urls')),
     #Path admin
     path('admin/', admin.site.urls),
+
+    #Path de autenticacion
+    path('accounts/',include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:
