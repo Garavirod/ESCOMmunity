@@ -1,16 +1,19 @@
 {% extends 'core/base.html' %}
 {% load static %}
 {% block control %}
-    <div class="collapse navbar-collapse text-center col-md-3" id="navbarNav">
+    <div class="collapse navbar-collapse text-center col-md-5" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active d-inline mr-2">
-                <a class="nav-link" href="Inicio.html"><i class="mr-3 fas fa-home"></i>Inicio <span
+                <a class="nav-link" href="{% url 'servicios' %}"><i class="mr-3 fas fa-home"></i>Inicio <span
                         class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item d-inline">
+                <a class="nav-link" href="{% url 'create' service.nameModule %}"><i class="mr-2 fas fa-pencil-alt"></i>Hacer post</a>
             </li>
             <li class="nav-item d-inline">
                 <a class="nav-link" href="../index.html"><i class="mr-3 fas fa-power-off"></i>Cerrar
                     sesión</a>
-            </li>
+            </li>             
         </ul>
     </div>
 {% endblock control %}
@@ -27,18 +30,22 @@
                         <p class="text-justify">{{service.descModule}}</p>
                     </div>
                     <div class="col-md-11  p-2">
-                        <h3 class="fuente3 text-left text-primary">
+                        <h5 class="fuente3 text-left text-primary">
                             Administrador
+                            <small class="text-muted text-bold">{{service.nameAdmin}}</small>
+                        </h5>
+                        <h5 class="fuente3 text-left text-primary">
+                            Username
                             <small class="text-muted text-bold">{{service.user}}</small>
-                        </h3>
-                        <h3 class="fuente3 text-left text-primary">
+                        </h5>
+                        <h5 class="fuente3 text-left text-primary">
                             Tel:
                             <small class="text-muted text_autor">{{service.cel}}</small>
-                        </h3>
-                        <h3 class="fuente3 text-left text-primary">
+                        </h5>
+                        <h5 class="fuente3 text-left text-primary">
                             correo
                             <small class="text-muted text_autor">{{service.eMail}}</small>
-                        </h3>
+                        </h5>
                     </div>
                 </div>
 
@@ -63,18 +70,19 @@
                             <h5 class="fuente">@User</h5>
                         </div>
                         <div class="card-body border-top">
-                            <div class="form-group">
-                                <label for="validationTextarea">Tíulo</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="validationTextarea">¿Qué quieres compartir?</label>
-                                <textarea class="form-control" id="validationTextarea" placeholder="Escribi aquí lo quieres compartr..."
-                                    required></textarea>
-                                <div class="">
-                            <button class="btn btn-primary mt-3">Publicar</button>
+                           <form action="" method="POST">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Título</label>
+                                    <div class="input-group">{{postform.title}}</div>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Contenido</label>
+                                    <div class="input-group">{{postform.content}}</div>
+                                </div>                                
+                                <button type="submit" class="btn btn-primary">Publicar</button>
+                           </form>
                         </div>
                     </div>
                 </div>
@@ -115,7 +123,7 @@
                             <h5 class="fuente">@User_913</h5>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">¿Como puedo sacar cita medica?</h5>
+                            <h5 class="card-title"></h5>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
                                 adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
                                 eveniet tempore cum excepturi id exercitationem vitae.</p>
@@ -161,46 +169,24 @@
                 <!-- FIN CARD 2 -->
 
                 <!-- CARD -3 -->
-                <div class="col-md-12 mb-3 mt-5">
+                {% for post in allpost %}
+                     <div class="col-md-12 mb-3 mt-5">
                     <div class="card">
                         <div class="card-header">
                             <h5 class="fuente">@User_903</h5>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Justificar falta con receta médica</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
-                                adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
-                                eveniet tempore cum excepturi id exercitationem vitae.</p>
+                            <h5 class="card-title">{{post.title}}</h5>
+                            <p class="card-text">{{post.content}}</p>
                             <button class="btn btn-primary" type="submit">Comentar</button>
                         </div>
                         <div class="card-footer text-muted">
-                            2 days ago
+                           {{post.published}}
                         </div>
                     </div>
-
-                </div>
-                <!-- FIN CARD 3 -->
-
-                <!-- CARD 4 -->
-                <div class="col-md-12 mb-3 mt-5">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="fuente">@User_345</h5>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Consultar seguro médico</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo maxime
-                                adipisci id voluptate est deserunt, dolor odio animi similique eos cum! Culpa ut
-                                eveniet tempore cum excepturi id exercitationem vitae.</p>
-                            <button class="btn btn-primary" type="submit">Comentar</button>
-                        </div>
-                        <div class="card-footer text-muted">
-                            2 days ago
-                        </div>
-                    </div>
-
-                </div>
-                <!-- FIN CARD 4 -->
+                </div>                
+                {% endfor %}               
+                <!-- FIN CARD 3 -->               
 
             </div>
         </div>

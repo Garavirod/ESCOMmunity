@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<main role="main">
+  <div class="container bg-primary">
+    <div class="row mt-3">
+      <div class="col-md-9 mx-auto">
+        <div>
+            {% if 'ok' in request.GET %}
+              <p>Publicación hecha</p>
+            {% endif %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                <table>
+                    {{ postform.as_table }}
+                </table>
+                <br>
+                <input type="submit" value="Publicar" />
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock content %}
