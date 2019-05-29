@@ -1,0 +1,20 @@
+    {% extends 'core/base.html' %}
+    {% load static %}
+    {% block control %}
+        <p class="navbar-brand"  id="nombre_app">ESCOM-munity</p>
+    {% endblock control %}
+    {% block content %}  
+    <style>.errorlist{color:red;} li{font-size:13px; color:blue;}</style>
+    <div class="card-deck text-center m-2 justify-content-center ">
+        <div class="card-body col-md-6 rounded bg-light">
+            <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
+            <small class="text-muted">Registro</small> <br><br>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    
+    {% endblock content %}
