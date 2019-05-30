@@ -7,3 +7,25 @@ class postalumno(forms.Form):
     content = forms.CharField(label="¿Qué quieres publicar?",required=True, widget=forms.Textarea(
         attrs={'class':'form-control','rows':5}
     ))
+
+
+class registroalumno(forms.Form):
+    boleta = forms.CharField(label="N° boleta",required=True, widget=forms.TextInput(
+        attrs={'class':'form-control','placeholder':'N° boleta'}
+    ))
+
+    name = forms.CharField(label="Nombre",required=True, widget=forms.TextInput(
+        attrs={'class':'form-control','placeholder':'Nombre'}
+    ))
+
+    lname = forms.CharField(label="Apellidos",required=True, widget=forms.TextInput(
+        attrs={'class':'form-control','placeholder':'Apellidos'}
+    ))
+
+    password1 = forms.CharField(required=True, widget=forms.PasswordInput(
+        attrs={'class':'form-control','placeholder':'password'}
+    ))
+
+    correo = forms.CharField(required=True, widget=forms.EmailInput(
+        attrs={'class':'form-control','placeholder':'Email'}
+    ))

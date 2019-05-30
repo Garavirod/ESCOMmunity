@@ -2,12 +2,12 @@
 {% load static %}
 {% block content %}
 <main role="main">
-  <div class="container bg-primary">
+  <div class="container bg-light">
     <div class="row mt-3">
       <div class="col-md-9 mx-auto">
         <div>
             {% if 'ok' in request.GET %}
-              <p>Publicación hecha</p>
+              <p>Publicación hecha</p>              
             {% endif %}
             <form action="" method="POST">
                 {% csrf_token %}

@@ -11,7 +11,7 @@
         <div class="col-md-12 bg-light p-4">
             <h3 class="fuente m-2">
                 Bienvenido
-                <small class="text-muted">@user</small>
+                <small class="text-muted">{{usuario}}</small>
             </h3>
             <hr id="divider">
 
@@ -63,22 +63,18 @@
                                             <button type="button" class="btn btn-secondary btn-sm mx-auto d-block"><i
                                                     class="mr-2 fas fa-camera"></i> Cambiar foto</button>
                                         </div>
-                                        <div class="col-md-12  p-3">
-                                            <h5 class="fuente m-2">
-                                                @Username :
-                                                <small class="text-muted">usuario</small>
-                                            </h5>
+                                        <div class="col-md-12  p-3">                                           
                                             <h5 class="fuente m-2">
                                                 N° Boleta :
-                                                <small class="text-muted">2314456778</small>
+                                                <small class="text-muted">{{boleta}}</small>
                                             </h5>
                                             <h5 class="fuente m-2">
                                                 Nombre :
-                                                <small class="text-muted">Apellido1 Apellido2 Nombre</small>
+                                                <small class="text-muted">{{usuario|title}}</small>
                                             </h5>
                                             <h5 class="fuente m-2">
                                                 Email :
-                                                <small class="text-muted">alumnoescomipn@gmail.com</small>
+                                                <small class="text-muted">{{email}}</small>
                                             </h5>
                                         </div>
                                     </div>

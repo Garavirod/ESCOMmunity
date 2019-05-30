@@ -36,45 +36,15 @@
                         <div class="row justify-content-center">
                             <div class="col-md-10 rounded bg-light p-4">
                                 <nav>
-                                    <div class="nav nav-tabs bg-light" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
-                                            role="tab" aria-controls="nav-home" aria-selected="true">Registrarse</a>
-                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                    <div class="nav nav-tabs bg-light" id="nav-tab" role="tablist">                                        
+                                        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
                                             role="tab" aria-controls="nav-profile" aria-selected="false">Alumno</a>
                                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                                             role="tab" aria-controls="nav-contact" aria-selected="false">Administrador</a>
                                     </div>
                                 </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                        aria-labelledby="nav-home-tab">
-                                        <div class="card-deck text-center m-2">
-                                            <div class="card-body">
-                                                <h5 class="card-title" id="nombre_app">ESCOM-munity</h5>
-                                                <small class="text-muted">Registro</small> <br><br>
-                                                <form>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control text-center" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="N° Boleta">
-                                                    </div>
-                                                        <div class="form-group">
-                                                        <input type="text" class="form-control text-center" id="exampleInputPassword1"
-                                                            placeholder="Email">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="password" class="form-control text-center" id="exampleInputPassword1"
-                                                            placeholder="Password">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="password" class="form-control text-center" id="exampleInputPassword1"
-                                                            placeholder="Confirma Password">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary">Registrarse</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="tab-content" id="nav-tabContent">                                    
+                                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                         <div class="card-deck text-center m-2">
                                             <div class="card p-2">
                                                 <img src="{% static 'core/imgs/alumnos.jpg' %}" class="card-img-top img-fluid" alt="..." id="imagen">
@@ -98,7 +68,8 @@
                                                             <input type="password" name="password" required
                                                             id="id_password" class="form-control" placeholder="Contraseña"/>
                                                         </p>
-                                                        <p><input type="submit" class="btn btn-primary btn-block" value="Acceder"></p>
+                                                        <input type="submit" class="btn btn-primary " value="Acceder">
+                                                         <a href="{% url 'signup' %}" class="btn btn-primary " value="Acceder">Registrarse</a>
                                                     </form>
                                                 </div>
                                             </div>

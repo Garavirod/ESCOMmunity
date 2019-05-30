@@ -11,8 +11,17 @@
             <small class="text-muted">Registro</small> <br><br>
             <form action="" method="post">
                 {% csrf_token %}
-                {{form.as_p}}
+                {% if 'fail' in request.GET %}
+                    <p style="color:red;">Usuario ya existente</p>              
+                {% endif %}
+                <p>{{registroform.boleta}}</p>
+                <p>{{registroform.name}}</p>
+                <p>{{registroform.lname}}</p>
+                <p>{{registroform.password1}}</p>
+                <p>{{registroform.correo}}</p>
                 <button type="submit" class="btn btn-primary">Registrarse</button>
+                <a href="{% url 'Login' %}" class="btn btn-primary" value="Acceder">Inicia sesión</a>
+
             </form>
         </div>
     </div>
