@@ -12,7 +12,9 @@
             <form action="" method="post">
                 {% csrf_token %}
                 {% if 'fail' in request.GET %}
-                    <p style="color:red;">Usuario ya existente</p>              
+                    <p style="color:red;">Número de boleta inválido</p>
+                {% elif 'exist' in request.GET%}
+                    <p style="color:red;">El numero de boleta ya existe, verifique de nuevo</p>
                 {% endif %}
                 <p>{{registroform.boleta}}</p>
                 <p>{{registroform.name}}</p>

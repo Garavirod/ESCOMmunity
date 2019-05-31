@@ -14,18 +14,19 @@ def Blog(request,section):
         section = section.upper()
         posts = Entry.objects.filter(service__nameModule=section)
         service = Service.objects.get(nameModule=section)
-        allpost = AlumnoPost.objects.filter(service=service) 
+        allpost = AlumnoPost.objects.filter(service=service)
+        usuario = request.user.get_full_name()
         if request.method == 'POST':
                 postform = postalumno(data=request.POST)
                 if postform.is_valid():
                         titulo = request.POST.get("title")
-                        contenido = request.POST.get("content")
-                        pos = AlumnoPost(title=titulo,content=contenido, published=now(),service=service)
+                        contenido = request.POST.get("content")                        
+                        pos = AlumnoPost(title=titulo,content=contenido, published=now(),service=service,author=request.user)
                         pos.save()
                         allpost = AlumnoPost.objects.filter(service=service)            
                         return redirect('/modulo/'+section+'?ok')
-        
-        return render(request,"blog/modulo.html",{"service":service,"posts":posts,"postform":postform,'allpost':allpost})
+
+        return render(request,"blog/modulo.html",{"service":service,"posts":posts,"postform":postform,'allpost':allpost,'usuario':usuario})
     else:
         return render(request,"registration/login.html")
 

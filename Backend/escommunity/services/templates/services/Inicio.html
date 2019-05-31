@@ -26,10 +26,14 @@
                             aria-controls="v-pills-messages" aria-selected="false"><i class="mr-3 fas fa-bell"></i>Notificaciones
                             <span class="badge badge-secondary badge-pill ml-2">3</span></a>
                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false"><i class="mr-3 fas fa-cog"></i>Configuraciones</a>
-                    </div>
+                            aria-controls="v-pills-settings" aria-selected="false"><i class="mr-2 fas fa-cog"></i>Configuraciones</a>                                                    
+                        </div>
+                    <a class="nav-link" href="https://www.saes.escom.ipn.mx/PDF/Alumnos/Reinscripciones/{{boleta}}-ComprobanteHorario.pdf"
+                        aria-controls="v-pills-settings" aria-selected="false"><i class="mr-2 fas fa-download"></i>Descarga horario</a>
+                    <a class="nav-link" href="{% url 'aulas' %}"
+                        aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-door-closed"></i>Salones disponibles</a>    
                     <a class="nav-link" href="{% url 'logout' %}"
-                        aria-controls="v-pills-settings" aria-selected="false"><i class="mr-3 fas fa-power-off"></i>Cerrar
+                        aria-controls="v-pills-settings" aria-selected="false"><i class="mr-2 fas fa-power-off"></i>Cerrar
                         sesión</a>
                 </div>
                 <div class="col-9 border p-2">
@@ -165,7 +169,7 @@
                                     <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                       
                     </div>
                 </div>
             </div>
