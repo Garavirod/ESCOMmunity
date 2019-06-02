@@ -29,3 +29,17 @@ class registroalumno(forms.Form):
     correo = forms.CharField(required=True, widget=forms.EmailInput(
         attrs={'class':'form-control','placeholder':'Email'}
     ))
+
+class resetPassword(forms.Form):
+    
+    password1 = forms.CharField(required=True, widget=forms.PasswordInput(
+        attrs={'class':'form-control mb-3','placeholder':'Contraseña actual'}
+    ))
+
+    password2 = forms.CharField(required=True, widget=forms.PasswordInput(
+        attrs={'class':'form-control','placeholder':'Nueva conraseña'}
+    ))
+
+    correo = forms.CharField(required=True, widget=forms.EmailInput(
+        attrs={'class':'form-control','placeholder':'Email'}
+    ))
