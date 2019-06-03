@@ -27,14 +27,14 @@
                             aria-controls="v-pills-profile" aria-selected="false"><i class="mr-3 fas fa-user"></i>Perfil</a>
                         <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
                             aria-controls="v-pills-messages" aria-selected="false"><i class="mr-3 fas fa-bell"></i>Notificaciones
-                            <span class="badge badge-secondary badge-pill ml-2 bg-danger">3</span></a>
+                            <span class="badge badge-secondary badge-pill ml-2 bg-danger" id="cantidad">3</span></a>
                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
                             aria-controls="v-pills-settings" aria-selected="false"><i class="mr-2 fas fa-cog"></i>Configuraciones</a>                                                    
                         </div>
                     <a class="nav-link" href="https://www.saes.escom.ipn.mx/PDF/Alumnos/Reinscripciones/{{boleta}}-ComprobanteHorario.pdf"
                         aria-controls="v-pills-settings" aria-selected="false"><i class="mr-2 fas fa-download"></i>Descarga horario</a>
                     <a class="nav-link" href="{% url 'aulas' %}"
-                        aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-door-closed"></i>Salones disponibles</a>    
+                        aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-door-open mr-2"></i>Salones disponibles</a>    
                     <a class="nav-link" href="{% url 'logout' %}"
                         aria-controls="v-pills-settings" aria-selected="false"><i class="mr-2 fas fa-power-off"></i>Cerrar
                         sesión</a>
@@ -47,7 +47,7 @@
                                     <div class="alert alert-light" role="alert">
                                         <h4 class="alert-heading">¡Bienvenido a ESCOMmunity!</h4>
                                         <p>
-                                            Aquí podrás verficar las secciones de interés de las actividades que se lleban acabo en la ESCOM,
+                                            Aquí podrás verficar las secciones de interés de las actividades que se llevan acabo en la ESCOM,
                                             recibirás notificaciones sólo de aqullas que te interesen, no te perderás de todo aquello que pasa en tu escuela.<br>
                                             Publica tus dudas o comentarios en el la sección que gustes. los administradores resolverán tus dudas.
                                             Esperamos que disfrutes de su uso como nostros difrutamos desarrollarlo para tí.
@@ -90,9 +90,9 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <div class="list-group" data-spy="scroll" >
+                            <div class="list-group" data-spy="scroll" id="notifiaciones">
                                 {% for not_entry in notifications_entry %}
-                                    <a href="{% url 'blog' not_entry.service.nameModule %}" class="list-group-item list-group-item-action">
+                                    <a href="{% url 'blog' not_entry.service.nameModule %}" class="list-group-item list-group-item-action" onclick="delete_notification()">
                                         <div class="d-flex w-100 justify-content-between">
                                             <h5 class="mb-1">{{not_entry.service.nameModule|title}}</h5>
                                             <small>{{not_entry.created|date:"M d, Y"}}</small>
@@ -102,7 +102,7 @@
                                     </a>
                                 {% endfor %}
                                 {% for not_post in notifications_post %}
-                                    <a href="#" class="list-group-item list-group-item-action">
+                                    <a href="{% url 'blog' not_post.service.nameModule%}" class="list-group-item list-group-item-action" onclick="delete_notification()">
                                         <div class="d-flex w-100 justify-content-between">
                                             <h5 class="mb-1">{{not_post.service.nameModule|title}}</h5>
                                             <small>{{not_post.created|date:"M d, Y"}}</small>
